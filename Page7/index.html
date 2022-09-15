@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Page 7</title>
+    </head>
+    <body>
+        <!--input tag with id of name-input which goes into var nameInput and asks user to Enter name in browser-->
+        <input id="name-input" type="text" placeholder="Enter your name" />
+        <!--button tag with id my-button which goes into var myButton and says Click Me on the button-->
+        <button id="my-button">Click Me</button>
+        <!--Starts a script (javascript)-->
+        <script>
+            //Initializes variable myButton from my-button in html
+            var myButton = document.querySelector('#my-button');
+            //Initializes variable nameInput from name-input in html
+            var nameInput = document.querySelector('#name-input');
+            //add event listener (function in javascript) on click which executes script below
+            myButton.addEventListener('click', function () {
+                //if the nameInput variable is not empty execute script below
+                if (nameInput.value !== '') {
+                    //popup in the browser Hello name with as an alert
+                    alert('Hello ' + nameInput.value);
+                }
+            });
+        </script>
+        <header><h1>Connor Carroll</h1></header>
+        <h2><div id="current_date"></p>
+            <script>
+            date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+            </script>
+        </h2>
+    </body>
+</html>

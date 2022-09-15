@@ -1,0 +1,18 @@
+body 
+{ 
+  color: red;
+  background: black;
+  font-family: serif;
+}
+#main-title {
+
+  text-align: center;
+}
+p.content
+{
+  margin-bottom: 12px;
+}
+article, aside, figure, footer, header, hgroup, menu, nav, section 
+{ 
+  display:block;
+}
